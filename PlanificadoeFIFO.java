@@ -52,7 +52,7 @@ public class PlanificadorFIFO {
             tiempoTotal += proceso.rafagaCpu;
 
             // Calculamos el tiempo de retorno del proceso
-            proceso.tiempoRetorno = tiempoTotal - proceso.tiempoLlegada;
+            proceso.tiempoRetorno = tiempoTotal - proceso.tiempoLlegada+2;
 
             // Sumamos al tiempo total de espera y retorno
             tiempoEsperaTotal += proceso.tiempoEspera;
