@@ -58,7 +58,7 @@ public class PlanificadorSJF {
 
                 // Calculamos el tiempo de retorno del proceso actual
                 procesoActual.tiempoRetorno = tiempoTotal - procesoActual.tiempoLlegada;
-                tiempoRetornoTotal += procesoActual.tiempoRetorno;
+                tiempoRetornoTotal += procesoActual.tiempoRetorno+2;
             } else {
                 tiempoTotal = procesos[procesoIndex].tiempoLlegada;
             }
